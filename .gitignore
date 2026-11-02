@@ -1,0 +1,72 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+/venv/
+/.venv/
+/env/
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+!.env.template
+/.aws/
+/.ssh/
+*.pem
+*.key
+
+# Model weights, compiled engines and numerical artifacts
+/models/
+/trt_models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.plan
+*.npy
+*.npz
+
+# Videos and generated inference/training outputs
+/video/
+/output/
+/output_*/
+/outputs/
+/runs/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.log
+
+# Distribution archives and generated copies of this project
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+/road_encroachment_server/
+/road_encroachment_jetson/
+
+# Third-party model checkouts (keep their own repositories separate)
+/PIDNet/
+/SegFormer/
+/mask2former/
+/Road_Segmentation_Model/
+
+# Keep experiment source and notes, omit generated experiment data
+/scratch/**
+!/scratch/**/
+!/scratch/**/*.py
+!/scratch/**/*.md
+
+# OS/editor temporary files
+.DS_Store
+*~
+*.swp
+*.swo
